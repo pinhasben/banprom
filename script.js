@@ -3,10 +3,14 @@ document.addEventListener("DOMContentLoaded", function() {
     let index = 0;
     const speed = 100;
     const typingElement = document.getElementById("typing-text");
-
+    
     function typeWriter() {
         if (index < text.length) {
-            typingElement.innerHTML += text.charAt(index).replace('\n', '<br>');
+            if (text.charAt(index) === "\n") {
+                typingElement.innerHTML += "<br>";
+            } else {
+                typingElement.innerHTML += text.charAt(index);
+            }
             index++;
             setTimeout(typeWriter, speed);
         } else {
@@ -17,6 +21,9 @@ document.addEventListener("DOMContentLoaded", function() {
             }, 2000);
         }
     }
+    
+    typeWriter();
+});
 
     typeWriter();
 });
