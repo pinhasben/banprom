@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function typeWriter() {
         if (index < text.length) {
-            typingElement.innerHTML += text.charAt(index);
+            typingElement.innerHTML += text.charAt(index).replace('\n', '<br>');
             index++;
             setTimeout(typeWriter, speed);
         } else {
