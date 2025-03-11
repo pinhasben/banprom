@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let index = 0;
     const speed = 100;
     const typingElement = document.getElementById("typing-text");
-    
+
     function typeWriter() {
         if (index < text.length) {
             if (text.charAt(index) === "\n") {
@@ -21,9 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }, 2000);
         }
     }
-    
-    typeWriter();
-});
 
     typeWriter();
 });
