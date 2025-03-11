@@ -1,4 +1,3 @@
-/* Animation de fond drapeau */
 @keyframes waving {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -27,21 +26,5 @@
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid white;
-    font-size: 24px;
-    font-weight: bold;
-    animation: typing 4s steps(40, end) infinite alternate, blink 0.7s infinite;
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink {
-    50% { border-color: transparent; }
-}
-
-
-@keyframes blink {
-    50% { border-color: transparent; }
+    padding-right: 5px;
 }
