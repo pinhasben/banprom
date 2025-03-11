@@ -29,8 +29,17 @@
     border-right: 2px solid white;
     font-size: 24px;
     font-weight: bold;
+    animation: typing 4s steps(40, end) infinite alternate, blink 0.7s infinite;
 }
 
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
 
 
 @keyframes blink {
